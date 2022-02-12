@@ -1,0 +1,12 @@
+all: one = cool
+%.c: one = hot
+
+all:
+	echo one is cool: $(one)
+
+blah.c:
+	echo one is hot: $(one)
+
+other:
+	echo one is nothing: $(one)
+
